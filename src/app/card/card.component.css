@@ -100,3 +100,7 @@ button{
 /* .flex-column {
   flex-direction: row!important;
 } */
+.fa-heart{
+  font-size: 18px;
+  color:red;
+}
