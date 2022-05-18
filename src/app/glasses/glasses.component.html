@@ -1,0 +1,56 @@
+<div class="d-flex align-content-around flex-wrap">
+
+  <div *ngFor="let glass of newGlass ">
+
+  <button (click)="onSelect(glass.strGlass)"> {{glass.strGlass}}</button>
+</div>
+</div>
+
+<!-- <div *ngFor="let g of glassy">
+ <h4> {{g.strDrink}}</h4>
+
+  <div>
+
+  <img src="{{g.strDrinkThumb}}">
+</div>
+</div> -->
+<div class="row" style="padding-left: 130px;">
+  <div *ngFor="let g of glassy" class="card-deck"
+  style="width:400px; padding:10px 15px;">
+    <div class="card">
+      <img class="card-img-top" src="{{g.strDrinkThumb}}" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">{{g.strDrink}}</h5>
+
+      </div>
+      <div class="card-footer" style="height: 85px;">
+        <div  class="center">
+          <button (click)="onDetail(g)">Details</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="modal" *ngFor="let newcat of deta">
+
+    <div id="myModal" class="modal" *ngIf="showMod">
+    <div class="modal-content">
+
+
+      <div class="d-flex justify-content-end" >
+
+  <button (click)="onCloseModal()" style="font-size:30px ;cursor: pointer; position:20px;" id="close">&times;</button>
+    </div>
+
+    <div class="firstBlur">
+
+
+    <p class="text-center">ingredients </p>
+    <p>{{newcat.strInstructions}}</p>
+
+
+    </div>
+    </div>
+  </div>
+  </div>
