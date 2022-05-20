@@ -8,14 +8,16 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule, routingComponents } from './app-routing.module';
 import{HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
-import { CardComponent } from './card/card.component'
+import { CardComponent } from './card/card.component';
+import { FavouriteComponent } from './favourite/favourite.component'
 
 
 @NgModule({
   declarations: [
     AppComponent,
     routingComponents,
-    CardComponent
+    CardComponent,
+    FavouriteComponent
 
   ],
   imports: [

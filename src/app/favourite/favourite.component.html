@@ -1,0 +1,31 @@
+<div class="row" style="padding-left: 130px;" >
+
+  <div *ngFor="let c of myFavorites" class="card-deck"
+  style="width:400px; padding:10px 15px;">
+
+  <app-card [data]="c" [showCard]="showCard"></app-card>
+</div>
+</div>
+
+<div class="modal" *ngFor="let newCoctk of details">
+
+  <div id="myModal" class="modal" *ngIf="showModal">
+  <div class="modal-content">
+
+
+    <div class="d-flex justify-content-end" >
+
+<button (click)="onCloseModal()" style="font-size:30px ;cursor: pointer; position:20px;" id="close">&times;</button>
+  </div>
+
+  <div class="firstBlur">
+
+
+  <p class="text-center">ingredients </p>
+  <p>{{newCoctk.strInstructions}}</p>
+
+
+  </div>
+  </div>
+</div>
+</div>

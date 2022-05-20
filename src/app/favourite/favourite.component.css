@@ -99,30 +99,32 @@ button{
 
 /* .flex-column {
   flex-direction: row!important;
+} */
+ .fa-heart{
+  font-size: 18px;
+  /* color:red; */
+
 }
-
-
 /* *{
   margin: 0;
   padding: 0;
 
 } */
 
-/* .card-footer{
+.btns{
   position: absolute;
- /* top: 216px;
+  top: 216px;
   left: 328px;
-   display: flex;
-}*/
+  display: flex;
+}
 
- .btn{
+.btn{
   background: transparent;
   border: none;
-   margin: 10px;
+  /* margin: 10px; */
   font-size: 18px;
   outline: none;
   color: grey;
-  cursor: pointer;
 }
 
 .btn i:hover{

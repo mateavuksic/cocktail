@@ -1,3 +1,4 @@
+import { FavouriteComponent } from './favourite/favourite.component';
 
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { GlassesComponent } from './glasses/glasses.component';
@@ -7,11 +8,13 @@ import { NgModule } from "@angular/core";
 import { Routes, RouterModule} from '@angular/router';
 
 
+
 const routes: Routes = [
   {path: 'categories', component: CategoriesComponent},
   {path: 'alcoholic' , component: AlcoholicComponent},
   {path: 'glasses', component: GlassesComponent},
   {path: 'ingredients', component:IngredientsComponent},
+  {path: 'favourites', component:FavouriteComponent}
 
 
 
@@ -21,4 +24,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [AlcoholicComponent,GlassesComponent,CategoriesComponent,IngredientsComponent];
+export const routingComponents = [AlcoholicComponent,GlassesComponent,CategoriesComponent,IngredientsComponent, FavouriteComponent];

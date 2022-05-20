@@ -98,3 +98,28 @@ button{
   flex-wrap: wrap;
 }
 
+/* *{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.btn{
+  background: transparent;
+  border: none;
+  /* margin: 87px;
+  font-size: 18px;
+  outline: none;
+  color: grey;
+}
+
+.btn i:hover{
+  cursor: pointer;
+}
+.btns{
+  position: absolute;
+  top: 216px;
+  left: 328px;
+  display: flex;
+} */

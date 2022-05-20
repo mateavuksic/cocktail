@@ -8,6 +8,8 @@ import { CocktailService } from '../cocktail.service';
 export class CardComponent implements OnInit {
 
 
+  myItem?:any;
+
   thirdCocktail:any=[];
   ingredy: any;
   newIngr:any=[];
@@ -18,17 +20,19 @@ export class CardComponent implements OnInit {
   searchResults: any;
   @Input() data:any;
   @Input() showCard?:boolean;
-
-
-
+  //  btnvar:any = document.getElementById('btnh');
+//  button:any = document.querySelector(".heart-like-button");
+selected?:boolean;
   constructor(private cocktailService: CocktailService) {}
 
   ngOnInit(): void {
 console.log("ksakagflotfe",this.data);
+
   }
   onSelect(ingr:any){
     this.cocktailService.getFilterIngredients(ingr).subscribe((data:any)=>{
       this.ingredy=data.drinks;
+
     })
   }
   onDetail(id:any){
@@ -39,6 +43,7 @@ console.log("ksakagflotfe",this.data);
            this.details = data.drinks;
            console.log(this.details);
            this.showModal=true;
+
          })
   }
   onCloseModal(){
@@ -46,8 +51,39 @@ console.log("ksakagflotfe",this.data);
     this.showModal =false;
   }
 
+  Toggle(id:any){
 
-  }
+    this.myItem = localStorage.getItem('matea');
+    if(this.myItem){
+      this.myItem=JSON.parse(this.myItem);
+      let elIndex = this.myItem.findIndex((element:any) => element.idDrink == id);
+      if(elIndex != -1){
+        this.myItem.splice(elIndex, 1);
+      } else {
+        this.myItem.push(this.data);
+      }
+    }
 
+    if(!this.myItem){
+      this.myItem=[];
+    }
 
+  //this.myItem.push(this.data);
+  localStorage.setItem('matea',JSON.stringify(this.myItem));
+//   if(this.btnvar.style.color =="red"){
+//     this.btnvar.style.color = "grey"
+//     }
+//   else{
+//          this.btnvar.style.color = "red"
+//        }
+// }
+//     this.button.addEventListener("click", () => {
+//   if (this.button.classList.contains("liked")) {
+//     this.button.classList.remove("liked");
+//   } else {
+//     this.button.classList.add("liked");
+//   }
+// });
+ }
+}
 
