@@ -9,7 +9,8 @@ import { AppRoutingModule, routingComponents } from './app-routing.module';
 import{HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { CardComponent } from './card/card.component';
-import { FavouriteComponent } from './favourite/favourite.component'
+import { FavouriteComponent } from './favourite/favourite.component';
+import { HomeComponent } from './home/home.component'
 
 
 @NgModule({
@@ -17,7 +18,8 @@ import { FavouriteComponent } from './favourite/favourite.component'
     AppComponent,
     routingComponents,
     CardComponent,
-    FavouriteComponent
+    FavouriteComponent,
+    HomeComponent
 
   ],
   imports: [

@@ -1,11 +1,35 @@
 <header>
   <div style="text-align: center">
-  <h1>cocktail</h1>
+  <h1>cocktails</h1>
 
 
   </div>
 </header>
 
+
+      <!-- <div id="camera" class="camera_wrap" style="display: block; margin-bottom:24px; height:558px;">
+   <div class="camera_fakehover"> -->
+     <!-- <div class="cameraSlide cameraSlide_0 cameracurrent" style="visibility: visible; display: block; z-index: 999;">
+      <img src="images/page-1_slide01.jpg?1653310236150" class="imgLoaded" style="visibility: visible; height: 558px; margin-left: -0.0337079px; margin-top: 0px; position: absolute; width: 1071.07px;" data-alignment="" data-portrait="" width="2050" height="1068">
+      <div class="camerarelative" style="width: 1071px; height: 558px;">
+      </div> -->
+      <!-- <div class="cameraSlide cameraSlide_1 cameranext" style="display: none; z-index: 1;"><img src="images/page-1_slide02.jpg?1653310236389" class="imgLoaded" style="visibility: visible; height: 558px; margin-left: -0.0337079px; margin-top: 0px; position: absolute; width: 1071.07px;" data-alignment="" data-portrait="" width="2050" height="1068"><div class="camerarelative" style="width: 1071px; height: 558px;">
+        <img src="images/page-1_slide02.jpg?1653310236389" class="imgLoaded" style="visibility: visible; height: 558px; margin-left: -0.0337079px; margin-top: 0px; position: absolute; width: 1071.07px;" data-alignment="" data-portrait="" width="2050" height="1068">
+        <div class="camerarelative" style="width: 1071px; height: 558px;"></div>
+      </div> -->
+
+
+
+
+
+     <!-- <div class="row">
+    <div id="video">
+    <video class="img-fluid" autoplay loop muted>
+      <source src="" type="video/mp4" />
+    </video>
+    </div>
+  </div>
+</div> -->
 <nav class="navbar navbar-expand-lg">
 
 
@@ -13,7 +37,10 @@
   <!--<div class="collapse navbar-collapse" id="navbarNavDropdown">-->
     <ul class="navbar-nav">
 
+      <li class="nav-item  active">
 
+        <a routerLink="/homes" routerLinkActive="active" class="nav-link" (click)="toggleSearch()">Home <span class="sr-only"></span></a>
+      </li>
       <li class="nav-item  active">
 
         <a routerLink="/categories" routerLinkActive="active" class="nav-link" (click)="toggleSearch()">Category <span class="sr-only"></span></a>
@@ -35,6 +62,7 @@
 
     </ul>
 
+
     <!-- <div class="search-container" *ngIf="showSearch" >
       <form *ngFor="let searc of search">
         <input type="text" class="search-click" name="" placeholder="search here..." />
@@ -45,6 +73,5 @@
 
 
 </nav>
-
 
 <router-outlet></router-outlet>

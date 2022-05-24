@@ -1,7 +1,7 @@
 button{
   border-radius: 50px;
   padding: 7px 20px;
-  background-color:rgb(217, 208, 219) ;
+  background-color: rgb(216, 182, 182);
   border:rgb(0, 0, 0) 90px;
   margin: 4px;
 
@@ -98,7 +98,7 @@ button{
   flex-wrap: wrap;
 }
 
-/* *{
+*{
   margin: 0;
   padding: 0;
 
@@ -108,7 +108,7 @@ button{
 .btn{
   background: transparent;
   border: none;
-  /* margin: 87px;
+   margin: 87px;
   font-size: 18px;
   outline: none;
   color: grey;
@@ -122,4 +122,4 @@ button{
   top: 216px;
   left: 328px;
   display: flex;
-} */
+}

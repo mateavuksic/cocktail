@@ -12,6 +12,7 @@ export class GlassesComponent implements OnInit {
   newGlass:any=[];
   showMod?: boolean;
   deta: any=[];
+  showCard=true;
 
   constructor(private cocktailService: CocktailService) { }
 

@@ -1,5 +1,5 @@
 import { FavouriteComponent } from './favourite/favourite.component';
-
+import { HomeComponent } from './home/home.component'
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { GlassesComponent } from './glasses/glasses.component';
 import { AlcoholicComponent } from './alcoholic/alcoholic.component';
@@ -10,6 +10,8 @@ import { Routes, RouterModule} from '@angular/router';
 
 
 const routes: Routes = [
+  {path: '', redirectTo: '/homes', pathMatch: 'full' },
+  {path:'homes', component: HomeComponent},
   {path: 'categories', component: CategoriesComponent},
   {path: 'alcoholic' , component: AlcoholicComponent},
   {path: 'glasses', component: GlassesComponent},
@@ -24,4 +26,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const routingComponents = [AlcoholicComponent,GlassesComponent,CategoriesComponent,IngredientsComponent, FavouriteComponent];
+export const routingComponents = [HomeComponent,AlcoholicComponent,GlassesComponent,CategoriesComponent,IngredientsComponent, FavouriteComponent];

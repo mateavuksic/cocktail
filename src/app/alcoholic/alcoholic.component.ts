@@ -11,6 +11,7 @@ export class AlcoholicComponent implements OnInit {
   alcoholy: any;
   detai: any;
   showModal?: boolean;
+  showCard=true;
   constructor(private cocktailService: CocktailService) { }
 
   ngOnInit(): void {

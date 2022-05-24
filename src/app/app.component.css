@@ -1,6 +1,6 @@
 
 .nav-link{
-  color: rgb(109, 79, 79);
+  color: rgb(173, 121, 121);
   font-size: 30px;
   background-color: 	256 	#ece5ff	rgb(236, 229, 255)	hsl(256, 100%, 95%);
 
@@ -12,7 +12,7 @@
 }
 header{
   background-color:300 	#ffe5ff	rgb(255, 229, 255)	hsl(300, 100%, 95%);
-  color:  rgb(109, 79, 79);
+  color:  rgb(173, 121, 121);
 
 }
 .nav-link {
@@ -111,3 +111,26 @@ nav{
   left: 0%;
   padding: 10px;
 }
+/* .img-fluid{
+  width:120%;
+  height:120%;
+} */
+/* #myVideo {
+  position: fixed;
+  /* right: 0;
+  /* bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width:10%;
+   height:10%;
+} */
+
+/* .container-fluid{
+  padding-left:350px;
+  width: 100%;
+  height: 180px;
+} */
+/* .card-deck{
+
+} */
+

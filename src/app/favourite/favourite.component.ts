@@ -11,7 +11,7 @@ export class FavouriteComponent implements OnInit {
   details: any;
   showCard=true;
   showModal?: boolean;
-
+  isSelected = true;
 
   constructor(private cocktailService:CocktailService) { }
 

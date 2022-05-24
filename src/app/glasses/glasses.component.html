@@ -14,7 +14,7 @@
   <img src="{{g.strDrinkThumb}}">
 </div>
 </div> -->
-<div class="row" style="padding-left: 130px;">
+<!-- <div class="row" style="padding-left: 130px;">
   <div *ngFor="let g of glassy" class="card-deck"
   style="width:400px; padding:10px 15px;">
     <div class="card">
@@ -31,7 +31,15 @@
       </div>
     </div>
   </div>
-  </div>
+  </div> -->
+  <div class="row" style="padding-left: 130px;" >
+    <div *ngFor="let g of glassy" class="card-deck"
+    style="width:400px; padding:10px 15px;" >
+
+    <app-card [data]="g" [showCard]="showCard"></app-card>
+    </div>
+
+      </div>
   <div class="modal" *ngFor="let newcat of deta">
 
     <div id="myModal" class="modal" *ngIf="showMod">

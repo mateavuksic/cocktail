@@ -13,9 +13,10 @@
   <img src="{{a.strDrinkThumb}}">
 </div>
 </div> -->
-<div class="row" style="padding-left: 130px;">
+<!-- <div class="row" style="padding-left: 130px;">
   <div *ngFor="let a of alcoholy " class="card-deck"
   style="width:400px; padding:10px 15px;">
+
     <div class="card">
       <img class="card-img-top" src="{{a.strDrinkThumb}}" alt="Card image cap">
       <div class="card-body">
@@ -30,7 +31,16 @@
       </div>
     </div>
   </div>
-  </div>
+  </div> -->
+  <div class="row" style="padding-left: 130px;" >
+    <div *ngFor="let a of alcoholy  " class="card-deck"
+    style="width:400px; padding:10px 15px;" >
+
+    <app-card [data]="a" [showCard]="showCard"></app-card>
+    </div>
+
+      </div>
+
   <div class="modal" *ngFor="let newCockta of detai">
 
     <div id="myModal" class="modal" *ngIf="showModal">

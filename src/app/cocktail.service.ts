@@ -35,8 +35,8 @@ constructor(private http: HttpClient) { }
     }
      getSearch(sr:any):any{
       return this.http.get("https://www.thecocktaildb.com/api/json/v1/1/search.php?i=" +sr);
-     }
+    }
      getSearchName(nm:any):any{
        return this.http.get("https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" +nm)
-     }
+    }
 }

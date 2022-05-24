@@ -18,11 +18,13 @@ export class CardComponent implements OnInit {
   search:any=[];
   searchTxt:any='';
   searchResults: any;
+  @Input() isSelected?:boolean;
   @Input() data:any;
   @Input() showCard?:boolean;
-  //  btnvar:any = document.getElementById('btnh');
+
+ btnvar:any = document.getElementById('btnh');
 //  button:any = document.querySelector(".heart-like-button");
-selected?:boolean;
+
   constructor(private cocktailService: CocktailService) {}
 
   ngOnInit(): void {
@@ -54,8 +56,12 @@ console.log("ksakagflotfe",this.data);
   Toggle(id:any){
 
     this.myItem = localStorage.getItem('matea');
+    let favorite: any= document.getElementsByClassName("fa fa-heart")[0];
+this.data.isSelected=false;
     if(this.myItem){
+      this.data.isSelected = true;
       this.myItem=JSON.parse(this.myItem);
+      this.isSelected = !this.isSelected;
       let elIndex = this.myItem.findIndex((element:any) => element.idDrink == id);
       if(elIndex != -1){
         this.myItem.splice(elIndex, 1);
@@ -67,6 +73,12 @@ console.log("ksakagflotfe",this.data);
     if(!this.myItem){
       this.myItem=[];
     }
+  //   if (this.btnvar.style.color =="red") {
+  //     this.btnvar.style.color = "grey"
+  // }
+  // else{
+  //     this.btnvar.style.color = "red"
+  // }
 
   //this.myItem.push(this.data);
   localStorage.setItem('matea',JSON.stringify(this.myItem));

@@ -1,0 +1,21 @@
+  .img-fluid{
+width: 90vh;
+height: 500px;
+position:unset;
+}
+.video{
+  display: flex;
+  align-items: center;
+justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.container-txt{
+  padding: 0px 20px;
+}
+.para-txt{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 400px;
+padding: 10px;
+}

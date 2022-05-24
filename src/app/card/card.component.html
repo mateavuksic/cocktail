@@ -11,11 +11,11 @@
 
 
       <button (click)="Toggle(data.idDrink)" id="btnh" class="btn">
-        <i class="fa fa-heart"></i>
+        <i class="fa fa-heart"  [style.color]="isSelected ? 'pink' : 'grey'"></i>
         </button>
         </div>
-<!--
-     <script>
+
+     <!-- <script>
       var btnvar = document.getElementById('btnh');
       function Toggle(){
         if(btnvar.style.color =="red"){
@@ -29,6 +29,7 @@
     </script> -->
 
   </div>
+
 
 
 <div class="modal" *ngFor="let newCoctk of details">
