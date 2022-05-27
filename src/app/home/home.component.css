@@ -135,10 +135,14 @@ ul {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   padding-inline-start: 40px;
+  flex-direction: column;
 }
 .footer-03 {
   background: #f8f1f1;
   font-size: 14px;
+}
+.ftco-footer-social{
+  list-style: none;
 }
 
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
@@ -296,10 +300,10 @@ body {
   z-index: 1;
 }
 
-.card__arc path {
+/* .card__arc path {
   fill: var(--surface-color);
-  d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
-}
+   path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+} */
 
 .card:hover .card__header {
   transform: translateY(0);
@@ -350,6 +354,11 @@ body {
 a{
 color: rgb(255, 255, 255);
 font-size: 20px;
+/* border-radius: 50px;
+padding: 7px 20px;
+background-color:  rgb(226, 139, 139); */
+
+
 }
 /* body {
   background: linear-gradient(335deg, rgba(255,140,107,1) 0%, rgba(255,228,168,1) 100%);
@@ -358,65 +367,12 @@ font-size: 20px;
   background-repeat: no-repeat;
   height: 100vh;
 } */
-/* #bg {
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-}
-#bg img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
-}
-html {
-  background: url(https://media.istockphoto.com/illustrations/watercolor-peach-brown-background-for-paper-design-illustration-id1319282759?k=20&m=1319282759&s=612x612&w=0&h=KfmNSC5YHGQnyKjaqWKUuhiBxuy3ECVXOK9wNTbWovc=) no-repeat center center fixed;
-  background-size: cover;
-  height: 100%;
-  overflow: hidden;
-} */
-/* .row{
-  height: 10%;
-  width: 100%;
-} */
+
+
 /*
 iframe{
   height: 500px;
   width: 100vh;
 
+}*/
 
-} */
-/* div {
-  display: table;
-} */
-
-/* .img{
-  /* vertical-align: middle;
-  display: table-cell;
-  display: flex; */
-  /* align-items: center;
-justify-content: space-evenly;
-  flex-wrap: wrap;
-  width: 90vh;
-height: 500px;
-} */
-/* span {
-  vertical-align: middle;
-  display: table-cell;
-} */
-/* .para-tx{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  width: 400px;
-padding: 10px;
-}
-.container-tx{
-  padding: 0px 20px;
-} */
