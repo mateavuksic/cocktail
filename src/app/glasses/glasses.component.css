@@ -1,9 +1,10 @@
 button{
   border-radius: 50px;
-  padding: 7px 20px;
+  padding: 7px 15px;
   background-color: rgb(224, 212, 212);
   border:rgb(0, 0, 0) 90px;
   margin: 4px;
+  margin-top: 115px;
 
 
 
@@ -57,3 +58,8 @@ button{
     display: flex;
     justify-content: end;
 }
+*, *:before, *:after{
+  box-sizing: content-box;
+  
+  
+  }

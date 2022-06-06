@@ -4,6 +4,7 @@ button{
   background-color: rgb(224, 212, 212);
   border:rgb(0, 0, 0) 90px;
   margin: 4px;
+  margin-top: 50px;
 
 
 
@@ -46,6 +47,7 @@ button{
     max-width: 500px;
     height: 400px;
     transform: translate(0% , 50%);
+    
   }
 
 
@@ -57,17 +59,21 @@ button{
     border-radius: 10px;
     width: 50px;
     height: 50px;
-    padding: 25px;
+    padding: 5px;
     transition: all 0.5s;
+    margin-top: 100px;
+ 
   }
   .search-click:focus {
     width: 300px;
     padding-left: 50px;
+   
   }
   .search-click {
     position: relative;
     overflow: hidden;
     height: 50px;
+
   }
   .search-click input {
     background: transparent;
@@ -78,6 +84,9 @@ button{
     height: 50px;
     left: 0%;
     padding: 10px;
+  
+   
+
 
 
 
@@ -96,6 +105,10 @@ button{
 }
 .flex-container {
   flex-wrap: wrap;
+}
+.search-button{
+  margin-top: 100px;
+  margin-top: auto;
 }
 
 *{
@@ -122,4 +135,147 @@ button{
   top: 216px;
   left: 328px;
   display: flex;
+}
+button{
+  border-radius: 30px;
+  padding: 7px 20px;
+  background-color: rgb(250, 245, 245);
+  border:rgb(216, 205, 205) 90px;
+  margin: 4px;
+  margin-top: 50px;
+
+
+
+}
+.center {
+  padding: 15px 115px  ;
+}
+.modal{
+  position:fixed;
+  display:block;
+  height: 100%;
+  width: 100%;
+
+
+  background-color: #fff;
+
+
+  padding-top: 100px;
+
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.4);
+
+
+
+
+
+  }
+   .firstBlur, .secondBlur, .imgBlur {
+
+    border: solid 2px rgb(217, 208, 219);
+    padding:5px;
+    position:relative;
+
+  }
+  .modal-content {
+    border: unset;
+    margin: auto;
+    padding: 20px;
+    border-radius: 4px;
+    max-width: 500px;
+    height: 400px;
+    transform: translate(0% , 50%);
+    
+  }
+
+
+  .search-click {
+    border: 1px solid #ccc;
+    outline: none;
+    background-size: 22px;
+    background-position: 13px;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    transition: all 0.5s;
+    margin-top: 100px;
+ 
+  }
+  .search-click:focus {
+    width: 300px;
+    padding-left: 50px;
+   
+  }
+  .search-click {
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+
+  }
+  .search-click input {
+    background: transparent;
+    border: 1px solid #ccc;
+    outline: none;
+    position: absolute;
+    width: 300px;
+    height: 50px;
+    left: 0%;
+    padding: 10px;
+  
+   
+
+
+
+
+  }
+  .input-group{
+  display : inline-block;
+  }
+
+
+
+.search-container{
+
+
+    display: flex;
+    justify-content: end;
+}
+.flex-container {
+  flex-wrap: wrap;
+}
+.search-button{
+  margin-top: 100px;
+  margin-top: auto;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.btn{
+  background: transparent;
+  border: none;
+   margin: 87px;
+  font-size: 18px;
+  outline: none;
+  color: grey;
+}
+
+.btn i:hover{
+  cursor: pointer;
+}
+.btns{
+  position: absolute;
+  top: 216px;
+  left: 328px;
+  display: flex;
+}
+*, *:before, *:after{
+box-sizing: content-box;
+
+
 }

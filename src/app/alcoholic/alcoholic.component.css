@@ -4,6 +4,7 @@ button{
   background-color: rgb(224, 212, 212);
   border:rgb(0, 0, 0) 90px;
   margin: 4px;
+  margin-top: 115px;
 
 
 
@@ -58,3 +59,8 @@ button{
 
 
 
+*, *:before, *:after{
+  box-sizing: content-box;
+  
+  
+  }

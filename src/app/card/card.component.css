@@ -1,7 +1,7 @@
 button{
-  border-radius: 50px;
+  border-radius: 30px;
   padding: 7px 20px;
-  background-color:  rgb(216, 182, 182);
+  background-color:  rgb(237, 226, 226);
   border:rgb(0, 0, 0) 90px;
   margin: 4px;
 
@@ -12,7 +12,7 @@ button{
   padding: 15px 115px  ;
 }
 .modal{
-  position:fixed;
+  position:relative;
   display:block;
   height: 100%;
   width: 100%;
@@ -98,8 +98,21 @@ button{
     justify-content: end;
 
 }
-
-
+*, *:before, *:after{
+  box-sizing: content-box;
+  
+  
+  
+  }
+  /* .card-footer, .card-body{
+    background-color: antiquewhite;
+    border: none;
+    margin: 0 ;
+    padding: 5px;
+  } */
+.card-deck{
+  border:30px;
+}
 /* .flex-column {
   flex-direction: row!important;
 }
