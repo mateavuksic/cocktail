@@ -1,8 +1,8 @@
 button{
   border-radius: 50px;
   padding: 7px 20px;
-  background-color: rgb(224, 212, 212);
-  border:rgb(0, 0, 0) 90px;
+  background-color: rgb(250, 245, 245);
+  border:rgb(216, 205, 205) 90px;
   margin: 4px;
   margin-top: 115px;
 
@@ -61,6 +61,6 @@ button{
 
 *, *:before, *:after{
   box-sizing: content-box;
-  
-  
+
+
   }

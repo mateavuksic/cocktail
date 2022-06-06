@@ -15,6 +15,7 @@ export class FavouriteComponent implements OnInit {
 
   constructor(private cocktailService:CocktailService) { }
 
+
   ngOnInit(): void {
     this.myFavorites = localStorage.getItem('matea');
     if(this.myFavorites){

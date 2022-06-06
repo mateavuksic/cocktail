@@ -16,7 +16,8 @@ const routes: Routes = [
   {path: 'alcoholic' , component: AlcoholicComponent},
   {path: 'glasses', component: GlassesComponent},
   {path: 'ingredients', component:IngredientsComponent},
-  {path: 'favourites', component:FavouriteComponent}
+  {path: 'favourites', component:FavouriteComponent},
+  {path:'**',component:HomeComponent}
 
 
 

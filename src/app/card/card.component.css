@@ -12,7 +12,7 @@ button{
   padding: 15px 115px  ;
 }
 .modal{
-  position:relative;
+  position:fixed;
   display:block;
   height: 100%;
   width: 100%;
@@ -25,6 +25,7 @@ button{
 
   background-color: black;
   background-color: rgba(0, 0, 0, 0.4);
+
 
 
 
@@ -100,9 +101,9 @@ button{
 }
 *, *:before, *:after{
   box-sizing: content-box;
-  
-  
-  
+
+
+
   }
   /* .card-footer, .card-body{
     background-color: antiquewhite;
