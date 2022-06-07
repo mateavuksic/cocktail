@@ -12,9 +12,11 @@
 
 
       <button (click)="Toggle(data.idDrink)" id="btnh" class="btn">
-        <i class="fa fa-heart"  [style.color]="isSelected ? 'pink' : 'grey'"></i>
+        <i class="fa fa-heart"  [style.color]=" isSelected ? 'pink' : 'grey'"></i>
         </button>
         </div>
+
+
 
      <!-- <script>
       var btnvar = document.getElementById('btnh');
@@ -50,6 +52,7 @@
 
   <p class="text-center">ingredients </p>
   <p>{{newCoctk.strInstructions}}</p>
+
 
 
   </div>

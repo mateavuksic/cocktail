@@ -97,6 +97,5 @@ this.data.isSelected=false;
 //   }
 // });
  }
-
 }
 
