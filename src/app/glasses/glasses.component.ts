@@ -13,10 +13,19 @@ export class GlassesComponent implements OnInit {
   showMod?: boolean;
   deta: any=[];
   showCard=true;
+  myCocktails: any=[];
+  isSelected?:boolean;
+  counter:any;
+  searchResult: null;
+
 
   constructor(private cocktailService: CocktailService) { }
 
   ngOnInit(): void {
+    this.myCocktails = localStorage.getItem("matea");
+    this.myCocktails = JSON.parse(this.myCocktails);
+    console.log("kategorija niz", this.myCocktails);
+
     this.cocktailService.getGlasses()
     .subscribe((data:any)=> {
       this. glassesCocktail = data.drinks;
@@ -31,7 +40,18 @@ export class GlassesComponent implements OnInit {
   onSelect(gl:any){
     this.cocktailService.getFilterGlasses(gl).subscribe((data:any)=>{
       this.glassy=data.drinks;
-    })
+      this.glassy.forEach(function (element:any) {
+        element.isSelected =false;
+    });
+    console.log("cocktails",this.glassy);
+    if(this.showCard ===  false){
+      this.searchResult = null;
+      this.showCard = true;
+      this.glassy = data.drinks;
+    }
+  })
+
+
   }
   onDetail(id:any){
     this.cocktailService.getDetails(id.idDrink)
@@ -44,5 +64,17 @@ export class GlassesComponent implements OnInit {
 onCloseModal(){
   this.deta = null;
   this.showMod =false;
+  }
+  favoriteFunction(){
+    if(localStorage.getItem('matea')!==null){
+      this.glassy.forEach((element:any) => {
+        this.myCocktails.forEach((elementO:any) => {
+          if(elementO.isSelected == true && elementO.idDrink == element.idDrink){
+            element.isSelected=true;
+            this.isSelected=element.isSelected;
+          }
+        });
+       });
+    }
   }
 }

@@ -12,7 +12,7 @@
 
 
       <button (click)="Toggle(data.idDrink)" id="btnh" class="btn">
-        <i class="fa fa-heart"  [style.color]=" isSelected ? 'pink' : 'grey'"></i>
+        <i class="fa fa-heart"  [style.color]=" data.isSelected && isSelected ? 'pink' : 'grey'"></i>
         </button>
         </div>
 
@@ -40,6 +40,7 @@
 
   <div id="myModal" *ngIf="showModal">
   <div class="modal-content">
+
 
 
     <div class="d-flex justify-content-end" >

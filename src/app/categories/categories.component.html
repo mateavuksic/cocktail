@@ -27,7 +27,7 @@
 
 <div *ngFor="let an of searchResult">
 <div class="row" style="padding-left: 130px;"
-style="width:400px; padding:10px 15px;">
+>
   <!-- <div class="card-deck"> -->
 
   <div class="card" >
@@ -88,7 +88,7 @@ style="width:400px; padding:10px 15px;">
         </div>
       </div> -->
 
-      <app-card  [data]="c" [showCard]="showCard" ></app-card>
+      <app-card  [data]="c" [showCard]="showCard" (favoriteEvent)="favoriteFunction()" [isSelected]="isSelected"></app-card>
     </div>
     </div>
 

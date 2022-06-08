@@ -22,19 +22,21 @@ export class CategoriesComponent implements OnInit {
   searchN: any = '';
   searchResult: any;
   showCard=true;
-
-
-
-
+  myCocktails: any=[];
+  isSelected?:boolean;
+  counter:any;
 
 
 
 
   constructor(private cocktailService: CocktailService) {
-   // this.obs = Observable.of(35);
+
    }
 
   ngOnInit(): void {
+    this.myCocktails = localStorage.getItem("matea");
+    this.myCocktails = JSON.parse(this.myCocktails);
+    console.log("kategorija niz", this.myCocktails);
     //neki tvoj servis (cocktailSerovice)
     this.cocktailService.getCategories()
     .subscribe((data:any)=> {
@@ -43,7 +45,8 @@ export class CategoriesComponent implements OnInit {
         this.newCocktail.push(this.secondCocktail[i]);
 
       }
-      console.log(this.secondCocktail);
+      console.log("SecondCocktails",this.secondCocktail);
+      console.log("newCockatil", this.newCocktail);
     })
 
 
@@ -54,6 +57,10 @@ export class CategoriesComponent implements OnInit {
   onSelect(name:any){
     this.cocktailService.getFilterCategories(name).subscribe((data:any)=>{
       this.cocktails=data.drinks;
+      this.cocktails.forEach(function (element:any) {
+        element.isSelected =false;
+      });
+      console.log("cocktails",this.cocktails);
       if(this.showCard ===  false){
         this.searchResult = null;
         this.showCard = true;
@@ -90,4 +97,16 @@ export class CategoriesComponent implements OnInit {
            })
 
           }
-        }
+          favoriteFunction(){
+            if(localStorage.getItem('matea')!==null){
+              this.cocktails.forEach((element:any) => {
+                this.myCocktails.forEach((elementO:any) => {
+                  if(elementO.isSelected == true && elementO.idDrink == element.idDrink){
+                    element.isSelected=true;
+                    this.isSelected=element.isSelected;
+                  }
+                });
+               });
+            }
+          }
+  }

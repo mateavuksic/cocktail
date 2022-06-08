@@ -36,7 +36,7 @@
     <div *ngFor="let a of alcoholy  " class="card-deck"
     style="width:400px; padding:10px 15px;" >
 
-    <app-card [data]="a" [showCard]="showCard"></app-card>
+    <app-card [data]="a" [showCard]="showCard" (favoriteEvent)="favoriteFunction()" [isSelected]="isSelected"></app-card>
     </div>
 
       </div>

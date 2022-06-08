@@ -19,11 +19,17 @@ export class IngredientsComponent implements OnInit {
   searchTxt:any='';
   searchResults: any;
   showCard=true;
-
+  myCocktails: any=[];
+  isSelected?:boolean;
+  counter:any;
 
   constructor(private cocktailService: CocktailService) {}
 
   ngOnInit(): void {
+    this.myCocktails = localStorage.getItem("matea");
+    this.myCocktails = JSON.parse(this.myCocktails);
+    console.log("kategorija niz", this.myCocktails);
+
     this.cocktailService.getIngredients()
     .subscribe((data:any)=> {
 
@@ -39,6 +45,10 @@ export class IngredientsComponent implements OnInit {
   onSelect(ingr:any){
     this.cocktailService.getFilterIngredients(ingr).subscribe((data:any)=>{
       this.ingredy=data.drinks;
+      this.ingredy.forEach(function (element:any) {
+        element.isSelected =false;
+      });
+
       if(this.showCard ===  false){
         this.searchResults = null;
         this.showCard = true;
@@ -72,6 +82,18 @@ export class IngredientsComponent implements OnInit {
            console.log(this.search);
 
          })
+}
+favoriteFunction(){
+  if(localStorage.getItem('matea')!==null){
+    this.ingredy.forEach((element:any) => {
+      this.myCocktails.forEach((elementO:any) => {
+        if(elementO.isSelected == true && elementO.idDrink == element.idDrink){
+          element.isSelected=true;
+          this.isSelected=element.isSelected;
+        }
+      });
+     });
+  }
 }
   }
 

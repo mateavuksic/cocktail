@@ -10,6 +10,7 @@ import{HttpClientModule} from '@angular/common/http';
 import {FormsModule} from '@angular/forms';
 import { CardComponent } from './card/card.component';
 import { FavouriteComponent } from './favourite/favourite.component';
+
 import { HomeComponent } from './home/home.component'
 
 

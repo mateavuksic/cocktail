@@ -196,11 +196,11 @@ button{
     background-size: 22px;
     background-position: 13px;
     border-radius: 10px;
-    width: 50px;
+    width: 10px;
     height: 50px;
-    padding: 5px;
+    padding: 15px;
     transition: all 0.5s;
-    margin-top: 100px;
+    margin-top: 110px;
 
   }
   .search-click:focus {
@@ -275,8 +275,8 @@ button{
   left: 328px;
   display: flex;
 }
-*, *:before, *:after{
+/* *, *:before, *:after{
 box-sizing: content-box;
 
 
-}
+} */

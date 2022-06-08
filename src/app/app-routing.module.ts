@@ -1,4 +1,5 @@
 import { FavouriteComponent } from './favourite/favourite.component';
+
 import { HomeComponent } from './home/home.component'
 import { IngredientsComponent } from './ingredients/ingredients.component';
 import { GlassesComponent } from './glasses/glasses.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
   {path: 'glasses', component: GlassesComponent},
   {path: 'ingredients', component:IngredientsComponent},
   {path: 'favourites', component:FavouriteComponent},
+
   {path:'**',component:HomeComponent}
 
 

@@ -12,16 +12,16 @@ export class FavouriteComponent implements OnInit {
   showCard=true;
   showModal?: boolean;
   isSelected = true;
-
+  myCocktails:any=[];
   constructor(private cocktailService:CocktailService) { }
 
 
   ngOnInit(): void {
-    this.myFavorites = localStorage.getItem('matea');
-    if(this.myFavorites){
-      this.myFavorites=JSON.parse(this.myFavorites);
+    this.myCocktails = localStorage.getItem('matea');
+    if(this.myCocktails){
+      this.myCocktails=JSON.parse(this.myCocktails);
     }
-    console.log("*****", this.myFavorites);
+    console.log("*****", this.myCocktails);
 
   }
 
