@@ -29,7 +29,7 @@ export class HomeComponent implements OnInit {
     document.documentElement.scrollTop = 0;
   }
   reveal(){
-    let reveals = document.querySelectorAll('.row');
+    let reveals = document.querySelectorAll(".row,.card");
 
 
     for (let i=0;i < reveals.length;i++){

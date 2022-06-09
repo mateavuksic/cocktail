@@ -5,13 +5,13 @@ position:unset;
 
 
 }
-/* *{
+ *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-} */
-/* .hero{
+  /* box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; */
+}
+ .hero{
   width: 100%;
   height: 100vh;
   position: relative;
@@ -54,24 +54,54 @@ position:unset;
   position:absolute;
   right: 0;
   bottom:0;
-  z-index: -1; */
-  /* width: 100%;
-height: 100vh; */
-/* margin-left: 50px;
+  z-index: -1;
+ width: 100%;
+height: 100vh;
+ margin-left: 50px;
 justify-content: center;
-border: outset;
- border-radius: 40px; */
-/* }
-@media (min-aspect-ratio: 16/9){
-  .back-video{
-    width: auto;
-    height: 100vh;
-    /* margin-left: 50px;
-justify-content: center; */
 /* border: outset;
  border-radius: 40px; */
-  /* }
-}  */
+ }
+@media (min-aspect-ratio: 16/9){
+  .back-video{
+    /* width: auto;
+    height: 100vh; */
+    width: 50%;
+    height: 90vh;
+    margin-right: 25%;
+    justify-content: center;
+    box-sizing: border-box;
+    position: absolute;
+    /* inset: 0px; */
+    padding: 7px 80px;
+    border: solid;
+    z-index: -1;
+    display: flex;
+    -webkit-box-align: center;
+
+    /* border: ridge; */
+    /* border-radius: 100%; */
+    /* border-block-end-width: revert; */
+    /* resize: none; */
+    /* background-color: #cccbca47; */
+}
+     /* margin-left: 50px; */
+/* justify-content: center;
+ border: outset;
+ border-radius: 40px; */
+ }
+ .card{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+
+}
+
+.card.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
 .row{
   position: relative;
   transform: translateY(150px);
@@ -158,7 +188,7 @@ ul {
 h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5 {
   line-height: 1.5;
   font-weight: 400;
-  font-family: "Poppins", Arial, sans-serif;
+  /* font-family: "Poppins", Arial, sans-serif; */
   margin-left: 55px;
 }
 .justify-content-end {
@@ -406,10 +436,11 @@ body{
 } */
 
 
-/*
-iframe{
+
+ /* iframe{
   height: 500px;
   width: 100vh;
 
-}*/
+
+} */
 

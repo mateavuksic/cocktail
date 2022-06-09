@@ -11,7 +11,8 @@ import {FormsModule} from '@angular/forms';
 import { CardComponent } from './card/card.component';
 import { FavouriteComponent } from './favourite/favourite.component';
 
-import { HomeComponent } from './home/home.component'
+import { HomeComponent } from './home/home.component';
+import { HistoryComponent } from './history/history.component'
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HomeComponent } from './home/home.component'
     routingComponents,
     CardComponent,
     FavouriteComponent,
-    HomeComponent
+    HomeComponent,
+    HistoryComponent
 
   ],
   imports: [
